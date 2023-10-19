@@ -1,19 +1,20 @@
 
-import { useState } from 'react'
+import { UseEffect } from './UseEffect'
+import { UseState } from './UseState'
 
 export default function App() {
 
-  const [count, setCount] = useState(0)
-  const [theme, setTheme] = useState('light');
-
-  function incrementCount() {
-    setCount((prevState) => prevState + 1)
-   };
 
   return (
     <div>
-      <h1>{count}</h1>
-      <button onClick={incrementCount}>Increment</button>
+      <h1>useState</h1>
+      <UseState />
+      <hr></hr>
+
+      <h1>useEffect</h1>
+      <UseEffect />
+      <hr></hr>
+
     </div>
   )
 }
