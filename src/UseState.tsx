@@ -6,6 +6,7 @@ export function UseState() {
   const [count, setCount] = useState(0)
   const [theme, setTheme] = useState('light');
 
+  //Para incrementar devemos pegar o prevState e aumentar 1 a partir dele.
   function incrementCount() {
     setCount((prevState) => prevState + 1)
    };
